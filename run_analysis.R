@@ -99,6 +99,8 @@ getMeanPerSubjectAndActivity <- function(extracted) {
   m <- dcast(mt, subject+label_name ~ variable, mean)
   # rename the column by appending mean
   names(m) <- gsub("$", "_mean", names(m))
+  names(m) <- gsub("subject_mean", "subject", names(m))
+  names(m) <- gsub("label_name_mean", "activity", names(m))
   m
 }
 
