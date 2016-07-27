@@ -7,9 +7,8 @@ To run the script, you need to
 1. unpack the data into current working directory
 2. need to have library reshape2 installed
 
-to executed the script, run the following in R
+to executed the script, run the following in R (suppose script is downloaded in current working directory)
 
-# suppose script is downloaded in current working directory
 source("run_analysis.R")
 
 the script will generate 3 objects
